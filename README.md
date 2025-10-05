@@ -155,9 +155,9 @@ O GraphQL está totalmente implementado e funcional. Acesse o GraphQL Playground
 
 **Criar Order:**
 ```bash
-curl -X POST http://localhost:8000/order \
-  -H "Content-Type: application/json" \
-  -d '{
+curl --location 'http://localhost:8000/order' \
+--header 'Content-Type: application/json' \
+--data '{
     "id": "123e4567-e89b-12d3-a456-426614174000",
     "price": 100.50,
     "tax": 10.05
